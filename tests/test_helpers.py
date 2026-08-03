@@ -1,3 +1,5 @@
+import wn
+
 from linguistical_symmetry.pipeline import UnionFind, median, normalized_text, percent, percentile, ratio
 
 
@@ -20,3 +22,8 @@ def test_numeric_helpers() -> None:
 
 def test_normalized_text() -> None:
     assert normalized_text("  InWard\tMotion ") == "inward motion"
+
+
+def test_wn_relation_metadata_compatibility() -> None:
+    assert hasattr(wn.Sense, "relation_map")
+    assert hasattr(wn.Synset, "relation_map")

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linguistical-symmetry-theory"
+version = "0.3.0"
+description = "A provenance-aware corpus pipeline for measuring opposition and synonym neighborhoods in Open English WordNet"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Parker Rowen"}]
+dependencies = [
+  "wn>=1.1,<1.2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[project.scripts]
+linguistical-symmetry-build = "linguistical_symmetry.pipeline:main"
+linguistical-symmetry-verify = "linguistical_symmetry.verify:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]

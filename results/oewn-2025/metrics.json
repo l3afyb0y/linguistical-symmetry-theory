@@ -1,0 +1,121 @@
+{
+  "project": "Linguistical Symmetry Theory",
+  "schema_version": "0.3.0",
+  "built_at_utc": "2026-08-03T16:51:52+00:00",
+  "source_revision": "7d13aaa571c7c2d00c277718b33e2d95e57fc4cc",
+  "lexicon_spec": "oewn:2025",
+  "lexicon_description": "Primary lexicons:\n  oewn:2025\n    Label  : Open English Wordnet\n    URL    : https://github.com/globalwordnet/english-wordnet\n    License: https://creativecommons.org/licenses/by/4.0\n    Words  : 135969 (a: 21621, n: 98220, r: 4489, s: 22, v: 11617)\n    Senses : 185129\n    Synsets: 107519 (a: 7502, n: 71864, r: 3615, s: 10717, v: 13821)\n    ILIs   : 104335",
+  "counts": {
+    "words": 135969,
+    "distinct_normalized_lemmas": 127311,
+    "word_forms": 140426,
+    "senses": 185129,
+    "synsets": 107519,
+    "relations": 355064,
+    "sense_relations": 120254,
+    "synset_relations": 234810,
+    "multi_member_synsets": 44932,
+    "senses_with_synonym_neighbor": 122513,
+    "lemmas_with_synonym_neighbor": 91058
+  },
+  "coverage": {
+    "share_synsets_multi_member": 0.4178982319404012,
+    "share_senses_with_synonym_neighbor": 0.6617709813157312,
+    "share_lemmas_with_synonym_neighbor": 0.7152406312101861,
+    "share_senses_with_direct_opposition": 0.04199234047610045,
+    "share_lemmas_with_direct_opposition": 0.05204577766257432,
+    "share_synsets_with_direct_opposition": 0.0,
+    "share_relations_that_are_opposition": 0.022497352589955614
+  },
+  "opposition": {
+    "directed_relation_records": 7988,
+    "directed_sense_relation_records": 7988,
+    "directed_synset_relation_records": 0,
+    "unique_undirected_pairs": 3994,
+    "unique_sense_pairs": 3994,
+    "unique_synset_pairs": 0,
+    "incident_senses": 7774,
+    "incident_lemmas": 6626,
+    "incident_synsets": 0,
+    "reciprocal_unique_pairs": 3994,
+    "reciprocal_pair_rate": 1.0,
+    "pair_type_counts": {
+      "sense:antonym": 3994
+    },
+    "connected_components": 3838,
+    "largest_component_size": 4,
+    "component_size_p95": 2.0,
+    "opposition_degree_median": 1.0,
+    "opposition_degree_p95": 1.0,
+    "opposition_degree_max": 3
+  },
+  "synonym_neighborhoods_around_sense_oppositions": {
+    "pairs_evaluated": 3994,
+    "one_or_both_poles_multi_lemma": 2080,
+    "both_poles_multi_lemma": 1040,
+    "equal_neighborhood_size_pairs": 2498,
+    "share_one_or_both_poles_multi_lemma": 0.5207811717576365,
+    "share_both_poles_multi_lemma": 0.26039058587881825,
+    "share_equal_neighborhood_sizes": 0.6254381572358538,
+    "median_balance_ratio": 1.0,
+    "balance_ratio_p25": 0.5,
+    "balance_ratio_p75": 1.0
+  },
+  "relations_by_type": {
+    "sense": {
+      "derivation": 73540,
+      "other": 16881,
+      "antonym": 7988,
+      "pertainym": 7372,
+      "exemplifies": 6625,
+      "is_exemplified_by": 6625,
+      "also": 1148,
+      "participle": 73,
+      "similar": 2
+    },
+    "synset": {
+      "hypernym": 88075,
+      "hyponym": 88075,
+      "similar": 23176,
+      "domain_topic": 6433,
+      "has_domain_topic": 6433,
+      "holo_part": 5387,
+      "mero_part": 5387,
+      "also": 2950,
+      "exemplifies": 1639,
+      "is_exemplified_by": 1639,
+      "attribute": 1260,
+      "holo_substance": 825,
+      "mero_substance": 825,
+      "holo_member": 723,
+      "mero_member": 723,
+      "entails": 407,
+      "is_entailed_by": 407,
+      "causes": 221,
+      "is_caused_by": 221,
+      "domain_region": 2,
+      "has_domain_region": 2
+    }
+  },
+  "senses_by_part_of_speech": {
+    "a": 30156,
+    "n": 124202,
+    "r": 5601,
+    "s": 23,
+    "v": 25147
+  },
+  "claim_rail": {
+    "directly_measured": [
+      "explicit OEWN opposition relations",
+      "synset co-membership as synonym-neighborhood structure",
+      "coverage, reciprocity, degree, components, and neighborhood-size balance"
+    ],
+    "not_measured": [
+      "information-theoretic redundancy",
+      "contextual or implicit antonymy absent from OEWN",
+      "whether semantic neighborhoods are geometrically isomorphic",
+      "whether a recursive serialization preserves useful semantic locality",
+      "whether unrestricted natural English can compile deterministically"
+    ]
+  }
+}

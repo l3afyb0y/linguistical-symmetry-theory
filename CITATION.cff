@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Please cite this software and research corpus using the metadata below."
+title: "Linguistical Symmetry Theory: Open English WordNet Corpus Pipeline"
+type: software
+authors:
+  - family-names: Rowen
+    given-names: Parker
+version: 0.3.1
+date-released: 2026-08-03
+license: MIT
+repository-code: "https://github.com/l3afyb0y/linguistical-symmetry-theory"
+abstract: >-
+  A provenance-aware pipeline for extracting lexical senses, synonym
+  neighborhoods, typed semantic relations, and explicit oppositional structure
+  from Open English WordNet 2025, with reproducible metrics and generated
+  research artifacts.

@@ -1,0 +1,38 @@
+{
+  "project": "Linguistical Symmetry Theory",
+  "schema_version": "0.3.0",
+  "built_at_utc": "2026-08-03T16:52:03+00:00",
+  "source_revision": "7d13aaa571c7c2d00c277718b33e2d95e57fc4cc",
+  "lexicon_spec": "oewn:2025",
+  "lexicons": [
+    {
+      "id": "oewn",
+      "version": "2025",
+      "label": "Open English Wordnet",
+      "language": "en",
+      "license": "https://creativecommons.org/licenses/by/4.0",
+      "url": "https://github.com/globalwordnet/english-wordnet"
+    }
+  ],
+  "ingestion_counts": {
+    "words": 135969,
+    "forms": 140426,
+    "synsets": 107519,
+    "senses": 185129,
+    "relations": 355064
+  },
+  "software": {
+    "python": "3.11.15 (main, Jun 16 2026, 21:41:52) [GCC 13.3.0]",
+    "wn": "1.1.0"
+  },
+  "method": {
+    "synonym_neighborhood": "distinct lemma co-membership in an OEWN synset",
+    "opposition_relations": [
+      "anto_converse",
+      "anto_gradable",
+      "anto_simple",
+      "antonym"
+    ],
+    "pair_deduplication": "unordered endpoint pair, relation type, and entity kind"
+  }
+}
